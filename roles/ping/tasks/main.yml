@@ -1,0 +1,5 @@
+---
+- name: pingexec
+  ping:
+#- debug: var=ansible_os_family
+#- debug: var=ansible_facts

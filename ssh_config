@@ -1,0 +1,6 @@
+Host myaws.web1a
+  User ec2-user
+  HostName xxx.xxx.xxx.xxx
+  IdentityFile /root/.ssh/ec2
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null

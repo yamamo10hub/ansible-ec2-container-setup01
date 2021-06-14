@@ -1,0 +1,8 @@
+version: "2"
+services:
+    nginx:
+        image: nginx:1.15
+        build: ./nginx
+        restart: always
+        ports:
+        - "8888:80"

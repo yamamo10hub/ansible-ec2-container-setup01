@@ -1,0 +1,8 @@
+---
+- hosts: myaws.web1a
+  gather_facts: no
+  become: true
+  #remote_user: ec2-user
+  roles:
+    - ping
+#- debug: var=ansible_facts 

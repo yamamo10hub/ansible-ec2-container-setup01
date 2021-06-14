@@ -1,0 +1,4 @@
+---
+- import_playbook: doping.yml
+- import_playbook: docker.yml
+- import_playbook: run-ngxcontainer.yml

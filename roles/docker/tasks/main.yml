@@ -1,0 +1,16 @@
+---
+- name: install docker from yum
+  yum: name=docker
+- name: copy setup shellfile
+  copy: 
+    src: setup-dockercompose.sh
+    #src: dev-setup-dockercompose.sh
+    dest: /tmp
+    mode: '0777'
+- name: install shell docker-compose
+  shell: /tmp/setup-dockercompose.sh
+  register: return_from_shell
+  changed_when: False
+- name: check shellexec 
+  debug: 
+    msg: "{{ return_from_shell.stdout }}"
